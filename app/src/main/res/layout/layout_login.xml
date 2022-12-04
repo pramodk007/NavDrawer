@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_centerInParent="true"
+        android:padding="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/edittext_mobile_number"
+            android:hint="Enter your Mobile Number"
+            android:maxLength="10"
+            android:padding="10dp"
+            android:drawableStart="@drawable/ic_person"
+            android:drawablePadding="20dp"
+            android:inputType="phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <EditText
+            android:id="@+id/edittext_password"
+            android:hint="Enter Password"
+            android:maxLength="10"
+            android:padding="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_below="@id/edittext_mobile_number"
+            android:drawableStart="@drawable/ic_person"
+            android:drawablePadding="20dp"
+            android:inputType="textPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <RelativeLayout
+            android:layout_below="@id/edittext_password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <CheckBox
+                android:id="@+id/checkbox_terms_and_condition"
+                android:layout_alignParentStart="true"
+                android:layout_centerInParent="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:text="Terms &amp; conditions"
+                android:layout_centerVertical="true"
+                android:textColor="@color/black"
+                android:layout_toEndOf="@id/checkbox_terms_and_condition"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>
