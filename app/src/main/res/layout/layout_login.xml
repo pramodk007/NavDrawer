@@ -4,54 +4,105 @@
     android:layout_height="match_parent">
 
     <RelativeLayout
-        android:layout_centerInParent="true"
-        android:padding="10dp"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:padding="10dp">
 
         <EditText
             android:id="@+id/edittext_mobile_number"
-            android:hint="Enter your Mobile Number"
-            android:maxLength="10"
-            android:padding="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
             android:drawableStart="@drawable/ic_person"
             android:drawablePadding="20dp"
+            android:hint="Enter your Mobile Number"
             android:inputType="phone"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"/>
+            android:maxLength="10"
+            android:padding="10dp" />
 
         <EditText
             android:id="@+id/edittext_password"
-            android:hint="Enter Password"
-            android:maxLength="10"
-            android:padding="10dp"
-            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
             android:layout_below="@id/edittext_mobile_number"
+            android:layout_marginTop="20dp"
             android:drawableStart="@drawable/ic_person"
             android:drawablePadding="20dp"
+            android:hint="Enter Password"
             android:inputType="textPassword"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"/>
+            android:padding="10dp" />
 
         <RelativeLayout
-            android:layout_below="@id/edittext_password"
+            android:id="@+id/layout_checkbox_and_terms_text"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:layout_below="@id/edittext_password">
+
             <CheckBox
                 android:id="@+id/checkbox_terms_and_condition"
-                android:layout_alignParentStart="true"
-                android:layout_centerInParent="true"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"/>
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_centerInParent="true" />
 
             <TextView
-                android:text="Terms &amp; conditions"
-                android:layout_centerVertical="true"
-                android:textColor="@color/black"
-                android:layout_toEndOf="@id/checkbox_terms_and_condition"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"/>
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toEndOf="@id/checkbox_terms_and_condition"
+                android:text="Terms &amp; conditions"
+                android:textColor="@color/black" />
         </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/layout_checkbox_and_terms_text"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/textview_forgot_password"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:text="Forgot Password?"
+                android:textColor="@color/black" />
+
+            <Button
+                android:id="@+id/button_login"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:text="login"
+                android:textAllCaps="false" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:padding="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/textview_text_one"
+            android:text="Don't have account register now"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/textview_register"
+            android:text="Register"
+            android:paddingStart="5dp"
+            android:layout_toEndOf="@id/textview_text_one"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
 
     </RelativeLayout>
 

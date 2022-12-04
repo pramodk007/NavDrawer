@@ -70,4 +70,5 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private void handleCheckBoxSetToFalse(){
         binding.layoutLogin.checkboxTermsAndCondition.setChecked(false);
     }
+
 }
